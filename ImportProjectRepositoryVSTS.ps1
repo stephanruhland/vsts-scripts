@@ -92,7 +92,7 @@ foreach ($repository in $selectedRepositories)
     Write-Host "Getting target commits for repository $repositoryName..."
     $commits = GetTargetRepositoryCommits $repositoryName
     $commitsCount = $commits.count;
-    Write-Host "Found $commitsCount in repository $repositoryName."
+    Write-Host "Found $commitsCount commits in repository $repositoryName."
 
     if ($commitsCount -le 0)
     {
